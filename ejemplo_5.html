@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cambio de imagen</title>
+    <script>
+        function cambiar ()
+        {
+            nombreImagen = document.getElementById('nombreImagen').value;
+            document.getElementById('imagen').src = nombreImagen;
+        }
+    </script>
+</head>
+<body>
+    <img id = "imagen" src="img/sis.jpeg" alt="">
+    <input type="text" id="nombreImagen">
+    <button onclick="cambiar ()">cambiar imagen
+    </button>
+    
+</body>
+</html>
