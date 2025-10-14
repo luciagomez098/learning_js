@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 4</title>
+</head>
+<body>
+<h2>Ejercicio 4</h2>
+
+<select id="imagenSelect">
+  <option value="img/descarga.jpeg">descarga.jpeg</option>
+  <option value="img/images.jpeg">images.jpeg</option>
+  <option value="img/images (1).jpeg">images (1).jpeg</option>
+</select>
+
+<div>
+  <img id="imagen" src="" alt="Imagen seleccionada" width="300" style="margin-top:10px; border:1px solid #ccc; border-radius:10px;">
+</div>
+
+<script>
+document.getElementById("imagenSelect").addEventListener("change", function() {
+    document.getElementById("imagen").src = this.value;
+});
+</script>
+
+</body>
+</html>

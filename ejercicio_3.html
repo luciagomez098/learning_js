@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 3</title>
+</head>
+<body>
+<h2>Ejercicio 3</h2>
+<input type="text" id="textoInput" placeholder="Escribe algo">
+<button onclick="mostrarTexto()">Mostrar</button>
+<div id="cajaTexto" style="margin-top:10px; border:1px solid #ccc; padding:10px;"></div>
+
+<script>
+function mostrarTexto() {
+    const texto = document.getElementById("textoInput").value;
+    document.getElementById("cajaTexto").innerText = texto;
+}
+</script>
+</body>
+</html>

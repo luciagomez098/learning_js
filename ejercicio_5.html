@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 5</title>
+</head>
+<body>
+<h2>Ejercicio 5</h2>
+<p id="texto">Este es un texto de ejemplo.</p>
+
+<label>Negrilla:</label>
+<select id="negrillaSelect">
+  <option value="no">No</option>
+  <option value="si">Sí</option>
+</select>
+
+<label>Cursiva:</label>
+<select id="cursivaSelect">
+  <option value="no">No</option>
+  <option value="si">Sí</option>
+</select>
+
+<script>
+function actualizarEstilo() {
+  const texto = document.getElementById("texto");
+  const negrilla = document.getElementById("negrillaSelect").value;
+  const cursiva = document.getElementById("cursivaSelect").value;
+
+  texto.style.fontWeight = (negrilla === "si") ? "bold" : "normal";
+  texto.style.fontStyle = (cursiva === "si") ? "italic" : "normal";
+}
+
+document.getElementById("negrillaSelect").addEventListener("change", actualizarEstilo);
+document.getElementById("cursivaSelect").addEventListener("change", actualizarEstilo);
+</script>
+</body>
+</html>
