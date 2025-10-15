@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos de datos y varibles</title>
+    <title>Tipos de datos y variables</title>
 </head>
 <body>
-
     <script>
-        /*
-        Tipos de datos en javascript:
-        Number: valor numerico
-        String: valor de texto o caracter
-        Boolean: valor booleano, true o false
-        Undefined: valor in definir
-        Date: valor de fecha
-        Object: objeto
-        Array: tabla   
+        /* 
+        Tipos de datos en JavaScript:
+        Number: valor numérico 
+        String: valor de texto o carácter 
+        Boolean: valor booleano, true o false 
+        Undefined: valor indefinido 
+        Date: valor de fecha 
+        Object: objeto 
+        Array: tabla 
         */
 
         var edad = 25;
-        var nombre = "Nicolas wandurraga";
+        var nombre = "Adriana Fuentes";
         var permiso = true;
-        var asignatura = ["Quimica", "Fisica", "Matematicas"];
-        var persona = {nombre : "Javier", apellidos: "Gomez"};
+        var asignatura = ["Química", "Física", "Matemáticas"];
+        var persona = {nombre : "Javier", apellidos: "Gómez"};
 
-        //null: el valor null es una variable en JS, representa intencionalmente un valor nulo o vacio.
+        // null: el valor null es una variable en JS, representa intencionalmente un valor nulo o vacío.
+        // undefined: el valor undefined (indefinido) es un tipo propio, al igual que nulo.
+        // Indica que este valor no ha sido asignado. Si una variable se declara, pero no se asigna, entonces su valor es indefinido.
 
-        // undefined: el valor undefined(indefinido) es un tipo propio, al igual que nulo. Lo que indica que este valor es un valor asignado. Si una variable se declara, pero no se asigna, entnces su valor es indefinido.
         let x;
-        alert (x);
+        alert(x);
 
-        // Operador typeoff: retorna el tipo de dato de la variable que se asa en el parametro.
-        var a = 0
-        var b = true
-        var c = "Nestor"
+        // Operador typeof: retorna el tipo de dato de la variable que se pasa en el parámetro.
+        var a = 0;
+        var b = true;
+        var c = "Néstor";
         console.log(typeof a);
         console.log(typeof b);
         console.log(typeof c);
@@ -43,38 +43,66 @@
         var valor = true;
         valor = String(valor);
 
-
-        // Funcion parseInt(): copiar de una cadena a un numero entero.
-
+        // Función parseInt(): convierte una cadena a un número entero.
         alert("Entero: " + parseInt("9.99"));
 
-        // Funcion toDateString(): convierte una fecha en una cadena de caracteres.
-
+        // Función toDateString(): convierte una fecha en una cadena de caracteres.
         var fecha = new Date();
-        var cadena = fecha. toDateString();
+        var cadena = fecha.toDateString();
 
-        // isNaN:   is Not a Number. verifica si el valor que le pasamos es un numero valido.
+        // isNaN: (is Not a Number). Verifica si el valor que le pasamos es un número válido.
 
         // Operadores aritméticos: permiten realizar operaciones matemáticas como suma, resta, multiplicación o división.
-
         // Operadores de asignación: sirven para asignar valores a variables, como "=" o "+=".
-
         // Operadores de manejo de cadenas (String): permiten unir, comparar o manipular textos, como el operador "+" para concatenar.
-
         // Operadores lógicos y de comparación: evalúan condiciones y devuelven valores booleanos (true o false), como "&&", "||", "==", "===" o "<".
-
         // Operadores de tipo: permiten identificar o convertir el tipo de dato, como "typeof" o "instanceof".
 
         // Ámbitos de las variables: determinan desde qué parte del código se puede acceder a una variable.
-
         // Ámbito de var: tiene un alcance global o de función, sin respetar bloques ({}).
-
-        // Ámbito de let: tiene un alcance de bloque, solo existe  dentro de las llaves donde fue declarada.
-
+        // Ámbito de let: tiene un alcance de bloque, solo existe dentro de las llaves donde fue declarada.
         // Ámbito de const: igual que let, pero su valor no puede cambiar una vez asignado.
 
 
+        /* -------------------------------------------------------------
+           Ejemplos prácticos hechos por Adriana Fuentes
+           Estudiante de grado 11° - Especialidad en Sistemas
+        ------------------------------------------------------------- */
+
+        // Ejemplo 1: Mostrar la edad y el nombre
+        console.log("Ejemplo 1:");
+        console.log("Mi nombre es " + nombre + " y tengo " + edad + " años.");
+
+        // Ejemplo 2: Mostrar una asignatura favorita del arreglo
+        console.log("Ejemplo 2:");
+        console.log("Mi asignatura favorita es " + asignatura[1] + ".");
+
+        // Ejemplo 3: Usar un valor booleano para mostrar un mensaje
+        console.log("Ejemplo 3:");
+        if (permiso) {
+            console.log("Tengo permiso para continuar el programa.");
+        } else {
+            console.log("No tengo permiso para continuar el programa.");
+        }
+
+        // Ejemplo 4: Mostrar el nombre y apellido del objeto persona
+        console.log("Ejemplo 4:");
+        console.log("La persona es " + persona.nombre + " " + persona.apellidos + ".");
+
+        // Ejemplo 5: Mostrar la fecha actual como cadena
+        console.log("Ejemplo 5:");
+        console.log("La fecha actual es: " + cadena);
+
+        // Ejemplo 6: Uso del operador typeof
+        console.log("Ejemplo 6:");
+        console.log("El tipo de dato de 'edad' es: " + typeof edad);
+        console.log("El tipo de dato de 'nombre' es: " + typeof nombre);
+        console.log("El tipo de dato de 'permiso' es: " + typeof permiso);
+
+        // Ejemplo 7: Verificar si un valor no es un número con isNaN()
+        console.log("Ejemplo 7:");
+        var dato = "Hola";
+        console.log("¿El valor 'Hola' es un número? " + isNaN(dato));
     </script>
-    
 </body>
 </html>
