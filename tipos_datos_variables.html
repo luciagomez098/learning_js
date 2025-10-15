@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de datos y varibles</title>
+</head>
+<body>
+
+    <script>
+        /*
+        Tipos de datos en javascript:
+        Number: valor numerico
+        String: valor de texto o caracter
+        Boolean: valor booleano, true o false
+        Undefined: valor in definir
+        Date: valor de fecha
+        Object: objeto
+        Array: tabla   
+        */
+
+        var edad = 25;
+        var nombre = "Nicolas wandurraga";
+        var permiso = true;
+        var asignatura = ["Quimica", "Fisica", "Matematicas"];
+        var persona = {nombre : "Javier", apellidos: "Gomez"};
+
+        //null: el valor null es una variable en JS, representa intencionalmente un valor nulo o vacio.
+
+        // undefined: el valor undefined(indefinido) es un tipo propio, al igual que nulo. Lo que indica que este valor es un valor asignado. Si una variable se declara, pero no se asigna, entnces su valor es indefinido.
+        let x;
+        alert (x);
+
+        // Operador typeoff: retorna el tipo de dato de la variable que se asa en el parametro.
+        var a = 0
+        var b = true
+        var c = "Nestor"
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(typeof c);
+
+        // Conversiones entre tipos de datos.
+        var valor = true;
+        valor = String(valor);
+
+
+        // Funcion parseInt(): copiar de una cadena a un numero entero.
+
+        alert("Entero: " + parseInt("9.99"));
+
+        // Funcion toDateString(): convierte una fecha en una cadena de caracteres.
+
+        var fecha = new Date();
+        var cadena = fecha. toDateString();
+
+        // isNaN:   is Not a Number. verifica si el valor que le pasamos es un numero valido.
+
+        // Operadores aritméticos: permiten realizar operaciones matemáticas como suma, resta, multiplicación o división.
+
+        // Operadores de asignación: sirven para asignar valores a variables, como "=" o "+=".
+
+        // Operadores de manejo de cadenas (String): permiten unir, comparar o manipular textos, como el operador "+" para concatenar.
+
+        // Operadores lógicos y de comparación: evalúan condiciones y devuelven valores booleanos (true o false), como "&&", "||", "==", "===" o "<".
+
+        // Operadores de tipo: permiten identificar o convertir el tipo de dato, como "typeof" o "instanceof".
+
+        // Ámbitos de las variables: determinan desde qué parte del código se puede acceder a una variable.
+
+        // Ámbito de var: tiene un alcance global o de función, sin respetar bloques ({}).
+
+        // Ámbito de let: tiene un alcance de bloque, solo existe  dentro de las llaves donde fue declarada.
+
+        // Ámbito de const: igual que let, pero su valor no puede cambiar una vez asignado.
+
+
+    </script>
+    
+</body>
+</html>
